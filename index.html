@@ -1,123 +1,265 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- link css -->
-    <link rel="stylesheet" href="./css/css_bootstrap.css">
-  </head>
-  <body>
-    <div class="container">
-        <div class="row">
-            <header class="col-sm-12 bg-primary text-white rounded-4 
-            p-5 d-flex flex-row justify-content-center align-items-center">
-            <img src="https://www.constructoraospina.com/images/C2.jpg" alt="incap" class="img-fuid rounded-circle" width="200px" height="">
-            <h1>ESCUELAS DE PROGRAMACION Y DISEÑO GRAFICO</h1>
-            </header>
-        </div>
-        <div class="row">
-            <!-- Seccion de barra de navegacion -->
-            <nav class="navbar navbar-expand-lg bg-dark opacity-90 rounded-4">
-                <div class="container-fluid">
-                <a class="navbar-brand text-white" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled text-white" aria-disabled="true">Disabled</a>
-                    </li>
-                    </ul>
-                </div>
-                </div>
-            </nav>
-        </div>
-        <!-- contenedor de 2 columnas -->
-        <div class="row">
-            <section class="col-sm-12 col-md-6 col-lg-8 col-xl-9 bg-dark">
-                <!-- seccion de slider de imagenes -->
-                <br>
-                <div id="carouselExampleIndicators" class="carousel slide">
-                    <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="https://i.pinimg.com/originals/dc/83/0f/dc830ff5a932e7d66a2a14e9de13e87d.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://i.etsystatic.com/44524775/r/il/3bca22/5714224435/il_fullxfull.5714224435_oslg.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://images.unsplash.com/photo-1494548162494-384bba4ab999?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8JTIzaGVybW9zbyUyMGFtYW5lY2VyfGVufDB8fDB8fHww" class="d-block w-100" alt="...">
-                    </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
+<head>
+	<meta charset="UTF-8">
+	<title>Concesionario AutosYa</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- link google font para bootstrap -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=BenchNine:300,400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	
+	<header class="top-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-5 header-logo">
+					<br>
+					<a href="index.html"><img src="data:image/png;base64,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"width="100" height="100" alt="" class="img-responsive logo"></a>
+				</div>
+
+				<div class="col-md-7">
+					<nav class="navbar navbar-default">
+					  <div class="container-fluid nav-bar">
+					   
+					    <div class="navbar-header">
+					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </button>
+					    </div>
+
+					    
+					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					      
+					      <ul class="nav navbar-nav navbar-right">
+					        <li><a class="menu active" href="#home" >INICIO</a></li>
+					        <li><a class="menu" href="nosotros.html">NOSOTROS</a></li>
+					        <li><a class="menu" href="productos.html">PRODUCTOS </a></li>
+					        <li><a class="menu" href="contacto.html"> CONTACTENOS</a></li>
+					      </ul>
+					    </div>
+					  </div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header> 
+
+	<section class="slider" id="home">
+		<div class="container-fluid">
+			<div class="row">
+
+			    <div id="carouselHacked" class="carousel slide carousel-fade" data-ride="carousel">
+					<div class="header-backup"></div>
+			        <!-- Wrapper for slides -->
+			        <div class="carousel-inner" role="listbox">
+			            <div class="item active">
+			            	<img src="./IMG/mamahuevo.jpg" alt="">
+			                <div class="carousel-caption">
+			                </div>
+			            </div>
+			            <div class="item">
+			            	<img src="./IMG/y entoces x2.jpg" alt="">
+			                <div class="carousel-caption">
+			                </div>
+			            </div>
+						<!-- contenedor -->
+						<div class="item">
+			            	<img src="./IMG/como fue entonces.webp" alt="">
+			                <div class="carousel-caption">
+			                </div>
+			            </div>
+					
+					</div>
+			          
+			        <a class="left carousel-control" href="#carouselHacked" role="button" data-slide="prev">
+			            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			            <span class="sr-only">Previous</span>
+			        </a>
+			        <a class="right carousel-control" href="#carouselHacked" role="button" data-slide="next">
+			            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			            <span class="sr-only">Next</span>
+			        </a>
+			    </div>
+			</div>
+		</div>
+	  </div>
+	</section>
+
+<section class="about">
+ 	<div class="container">
+		<div class="row">
+	      	<div class="col-md-8">
+		        <h1>QUE HACEMOS</h1>
+		        <hr>
+		        <p>Nuestro objetivo es brindarle el mejor servicio, nuestro personal esta capacitado para darle una excelente asesoria, somos los mejores en el mercado local !</p>
+		        <p>Estamos en permanente capacitacion y nuestro mision es servirle siempre!!.</p>
+		        <a class="btn btn-primary btn-lg" href="#">Ver Más &raquo;</a>
+	      	</div>
+	      	<div class="col-md-4">
+		        <h1>CONTACTO</h1>
+		        <hr>
+		        <address>
+		          <p><strong>Av choco 12-30</strong></p>		          
+		          <p>CHOCO, AFRICA</p>
+		          <p><strong>Telefono: 3125320516 LLAME AHORA </strong></p>
+		          <p><strong>Email: IMPERIOCHOCUANO.com</strong></p>
+				  <ul><li><i class="fa fa-envelope"></i><span>Correo:</span> samuelandresmorenocortes@gmail.com</li></ul></div></div>
+	        	</address>
+	      	</div>
+    	</div>
+ 	</div>
+ </section>
+
+		
+
+<section class="service text-center">
+	<div class="container">
+		<div class="row">
+			<h2>Nuestras Marcas</h2>
+			<h4>Tenemos una gran variedad de marcas para que encuentre el sullo.</h4>
+
+			<div class="col-md-3 col-sm-6">
+				<div class="single-service">
+					<div class="single-service-img">
+						<div class="service-img">
+							<img class="img-responsive" src="./IMG/legends.jpg"width="190" height="150" alt="">
+						</div>
+					</div>
+					<h3>Ferrari</h3>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-sm-6">
+				<div class="single-service">
+					<div class="single-service-img">
+						<div class="service-img">
+							<img class="img-responsive" src="./IMG/dragon ball legends.png"width="200" height="150" alt="">
+						</div>
+					</div>
+					<h3>Supra</h3>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-sm-6">
+				<div class="single-service">
+					<div class="single-service-img">
+						<div class="service-img">
+							<img class="img-responsive" src="./IMG/dragon.svg" width="140" height="150" alt="">
+						</div>
+					</div>
+					<h3>Bmw</h3>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-sm-6">
+				<div class="single-service">
+					<div class="single-service-img">
+						<div class="service-img">
+							<img class="img-responsive" src="./IMG/ball.jpg"width="200" height="150" alt="">
+						</div>
+					</div>
+					<h3>Audi</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="sec_video">	
+		<div class="container">
+			<div class="row ">
+	      		<div class="col-md-6">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/vWRmfW9VMAU?si=S0eskzF3dSK8x6D4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+				<div class="col-md-6" style="padding-left:50px ;">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/T69__gID2BM?si=1ifMbap7uhiQTtSG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+				  
+				</div>
+      		</div>
+     	</div>
+</section>
 
 
-            </section>
-            <aside class="col-sm-12 col-md-6 col-lg-4 col-xl-3 bg-secondary">
-                <br>
-                <iframe width="300" height="215" src="https://www.youtube.com/embed/UxzXrx0YARo?si=KVnqVbBhHqe7YpHJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <br><br>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d167998.23264105234!2d2.1818884298136547!3d48.8587369764341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTorre%20Eiffel!5e0!3m2!1ses-419!2sco!4v1742652983057!5m2!1ses-419!2sco" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <br><br>
-            </aside>
-        </div>
-        <br>
-        <div class="row">
-            <footer class="col-sm-12 bg-secondary text-dark rounded-4 d-flex flex-row justify-content-center align-items-center">
-                <img src="https://static.vecteezy.com/system/resources/previews/047/248/491/non_2x/facebook-3d-facebook-logo-3d-facebook-icon-3d-facebook-symbol-free-png.png" alt="facebook"
-                width="90px">
-                <img src="https://cdn3d.iconscout.com/3d/free/thumb/free-instagram-7096205-5753427.png?f=webp" alt="instagram" width="90px">
-                <img src="https://static.vecteezy.com/system/resources/previews/027/224/003/non_2x/tiktok-3d-logo-free-png.png" alt="tiktok" width="90px">
-                <p>&copy;Todos los derechos reservados @sebastian2025</p>
-            </footer>
-        </div>
+
+<section class="api-map" id="contact">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 map" id="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.8793133061085!2d-74.07118748787875!3d4.615608695339766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f998484277acf%3A0x3bab23efae829923!2sMuseo%20Nacional%20de%20Colombia!5e0!3m2!1ses!2sco!4v1743085259316!5m2!1ses!2sco" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="contact">
+	<div class="container">
+		<div class="row">
+				<div class="contact-caption clearfix">
+					<div class="contact-heading text-center">
+						<h2>Contactanos</h2>
+					</div>
+
+					<div class="col-md-5 contact-info text-left">
+						<h3>Informacion de Contacto</h3>
+						<div class="info-detail">
+							<ul><li><i class="fa fa-calendar"></i><span>Lunes - Viernes:</span> 11:00 AM to 11:30 AM</li></ul>
+							<ul><li><i class="fa fa-map-marker"></i><span>Direccion:</span> Av cocho 12-30</li></ul>
+							<ul><li><i class="fa fa-phone"></i><span>Telefono:</span> 3125320516 LLAME AHORA </li></ul>
+							<ul><li><i class="fa fa-envelope"></i><span>Correo:</span> IMPERIOCHOCUANO.com</li></ul>
+							<ul><li><i class="fa fa-envelope"></i><span>Correo:</span> samuelandresmorenocortes@gmail.com</li></ul></div></div>
+						</div>
+					</div>
+
+
+					<div class="col-md-6 col-md-offset-1 contact-form">
+						<h3>Dejanos un Mensaje</h3>
+
+						<form class="form">
+							<input class="name" type="text" placeholder="Nombre">
+							<input class="email" type="email" placeholder="Correo">
+							<input class="phone" type="text" placeholder="Telefono:">
+							<textarea class="message" name="message" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+							<input class="submit-btn" type="submit" value="Enviar">
+						</form>
+					</div>
+
+				</div>
+		</div>
+	</div>
+</section>
 
 
 
+<footer class="footer clearfix">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 footer-para">
+				<p>&copy; <a href="https://www.mipagina.com">SAMUEL MORENO</a>HOY NO FIO MAÑANA SI</p>
+			</div>
+
+			<div class="col-xs-6 text-right">
+				<a href=""><i class="fa fa-facebook"></i></a>
+				<a href=""><i class="fa fa-twitter"></i></a>
+				<a href=""><i class="fa fa-instagram"></i></a>
+			</div>
+		</div>
+	</div>
+</footer>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+	<script src="js/jquery-2.1.1.js"></script>
+<!-- borrar esta linea que esta en original -->
+	<script src="js/gmaps.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/custom.js"></script>
+	
+</body>
 </html>

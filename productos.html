@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Concesionario AutosYa</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=BenchNine:300,400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	
+	<header class="top-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-5 header-logo">
+					<br>
+					<a href="index.html"><img src="data:image/png;base64,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"width="100" height="100" alt="" class="img-responsive logo"></a>
+				</div>
+
+				<div class="col-md-7">
+					<nav class="navbar navbar-default">
+					  <div class="container-fluid nav-bar">
+					   
+					    <div class="navbar-header">
+					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </button>
+					    </div>
+
+					    
+					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					      
+					      <ul class="nav navbar-nav navbar-right">
+					        <li><a class="menu" href="index.html" >INICIO</a></li>
+					        <li><a class="menu" href="nosotros.html">NOSOTROS</a></li>
+					        <li><a class="menu active" href="productos.html">PRODUCTOS </a></li>
+					        <li><a class="menu" href="contacto.html"> CONTACTENOS</a></li>
+					      </ul>
+					    </div>
+					  </div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header> 
+
+<section class="about text-center">
+	<div class="container">
+		<div class="row">
+			<h2>Nuestras Marcas</h2>
+			
+
+			<div class="col-md-4 col-sm-6">
+				<div class="single-about-detail clearfix">
+					<div class="about-img">
+						<p>&copy; <a href="https://www.audi.com.co/"><img src="./IMG/ball.jpg"width="140" height="150" alt=""></p>
+					</div>
+
+					<div class="about-details">
+
+						<h3>AUDI</h3>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6">
+				<div class="single-about-detail">
+					<div class="about-img">
+						<p>&copy; <a href="https://www.lamborghini.com/es-en"><img class="img-responsive" src="./IMG/Lamborghini-rompe-record-de-ventas-¿Como-lo-logro-de-nuevo-300x257.jpg"width="140" height="200" alt=""></p>
+					</div>
+					<div class="about-details">
+						<h3>LAMBORGHINI</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="single-about-detail">
+					<div class="about-img">
+						<p>&copy; <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiNsuP2_buMAxX4oloFHfSzDdEYABAAGgJ2dQ&ae=1&dsh=1&co=1&gclid=CjwKCAjw47i_BhBTEiwAaJfPpu0zaL91wHaWKZgaragoRcEO-S5ZGIPJIRPJikBRFlmqYMy_IajtbRoCTXwQAvD_BwE&ohost=www.google.com&cid=CAESV-D269ioTMLEf8ZWG8nJ1Ou45WE7wpvhBzxbSlOvo3MZi24Qz727_bXnORneXIVQI6nzIklBpDdaKKI2fyOK-J5fUHbUHObmUIkAOo3FJaUkXYFfSScBoA&sig=AOD64_3RduZ74QJfw3ZLsljuAj6eeN4gaA&q&adurl=https://www.ford.com.co/cotiza/?searchid%3Daosem%7Cexact%7Cbrandpure%26utm_source%3Dgoogle%26utm_medium%3Dbrandpure%26utm_campaign%3Daosem%26utm_term%3Dleads%26gad_source%3D1%26gbraid%3D0AAAAADm7rdT1X1B7nqMgzHrsmqSRaPvyl%26gclid%3DCjwKCAjw47i_BhBTEiwAaJfPpu0zaL91wHaWKZgaragoRcEO-S5ZGIPJIRPJikBRFlmqYMy_IajtbRoCTXwQAvD_BwE&ved=2ahUKEwj5oN32_buMAxUDQjABHXaME5AQ0Qx6BAggEAE"><img class="img-responsive" src="./IMG/sapo.jpg"width="140" height="150" alt=""></p>
+					</div>
+					<div class="about-details">
+						<h3>FORD</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="single-about-detail">
+					<div class="about-img">
+						<p>&copy; <a href="https://www.bmw.com.co/"><img class="img-responsive" src="./IMG/pngimg.com - bmw_logo_PNG19713 GABRIEL.png"width="140" height="150" alt=""></p>
+					</div>
+					<div class="about-details">
+						<h3>BMW</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="single-about-detail">
+					<div class="about-img">
+						<p>&copy; <a href="https://www.toyota.com/espanol/grsupra/"><img class="img-responsive" src="./IMG/dragon ball legends.png"width="140" height="150" alt=""></p>
+					</div>
+					<div class="about-details">
+						<h3>SUPRA</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="single-about-detail clearfix">
+					<div class="about-img">
+						<p>&copy; <a href="https://www.ferrari.com/es-ES"><img src="./IMG/legends.jpg"width="140" height="150" alt=""></p>
+					</div>
+					<div class="about-details">
+						<h3>FERRARI</h3>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+</section>
+
+
+
+<footer class="footer clearfix">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 footer-para">
+				<p>&copy; <a href="https://www.mipagina.com">SAMUEL MORENO</a> HOY NO FIO MAÑANA SI</p>
+			</div>
+
+			<div class="col-xs-6 text-right">
+				<a href=""><i class="fa fa-facebook"></i></a>
+				<a href=""><i class="fa fa-twitter"></i></a>
+				<a href=""><i class="fa fa-instagram"></i></a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script src="js/gmaps.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/custom.js"></script>
+	
+</body>
+</html>
